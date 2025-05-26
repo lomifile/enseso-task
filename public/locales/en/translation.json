@@ -1,0 +1,72 @@
+{
+  "navbar": {
+    "title": "My awesome app"
+  },
+  "create": {
+    "title": "New economic operator",
+    "trigger-title": "Create economic operator"
+  },
+  "update": {
+    "title": "Update economic operator"
+  },
+  "form": {
+    "Message_Type": "Message Type",
+    "EO_ID": "Unique ID",
+    "EO_Code": "Confirmation code",
+    "EO_Type": "Economic Operator Type",
+    "EO_Type_Data": {
+      "1": "Manufacturer / Importer",
+      "2": "External Manufacturer / Importer",
+      "3": "Distributor",
+      "4": "Retailer"
+    },
+    "EO_Name1": "Economic Operator Name 1",
+    "EO_Name2": "Economic Operator Name 2",
+    "EO_Address_Name": "Address Name",
+    "EO_Address_StreetOne": "Street 1",
+    "EO_Address_StreetTwo": "Street 2",
+    "EO_Address_PostCode": "Postcode",
+    "EO_Address_City": "City",
+    "EO_A_Info": "Additional Info",
+    "EO_CountryReg": "Country of Registration",
+    "EO_Email": "Email",
+    "EO_Phone": "Phone",
+    "VAT_R": "VAT Registered",
+    "VAT_R_Data": {
+      "0": "No VAT registration",
+      "1": "VAT Number exists"
+    },
+    "VAT_N": "VAT Number",
+    "TAX_N": "Tax Number",
+    "EO_ExciseNumber1": "Excise Number 1",
+    "EO_ExciseNumber1_Data": {
+      "0": "No",
+      "1": "SEED number exists"
+    },
+    "EO_ExciseNumber2": "Excise Number 2",
+    "OtherEOID_R": "Other EO Identifier Registered",
+    "OtherEOID_N_list": "List of Other EO Identifiers",
+    "OtherEOID_N_list.OtherEOID_N": "Other EO Identifier",
+    "Reg_3RD": "Third Party Registration",
+    "Reg_EOID": "Third Party EO Identifier",
+    "EO_OtherID": "Other EO ID",
+    "Extensibility": "Extensibility",
+    "trigger": {
+      "update": "Update",
+      "create": "Create"
+    }
+  },
+  "yesno_data": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "table": {
+    "name1": "Name 1",
+    "name2": "Name 2",
+    "action": "Action"
+  },
+  "login": {
+    "username": "Username",
+    "password": "Password"
+  }
+}

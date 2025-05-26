@@ -1,0 +1,72 @@
+{
+  "navbar": {
+    "title": "Moja odlicna aplikacija"
+  },
+  "create": {
+    "title": "Novi ekonomski operator",
+    "trigger-title": "Kreiraj ekonomski operater"
+  },
+  "update": {
+    "title": "Ažuriraj ekonomski operator"
+  },
+  "form": {
+    "Message_Type": "Vrsta poruke",
+    "EO_ID": "Jedinstveni ID gospodarskog subjekta",
+    "EO_Code": "Potvrdni kod",
+    "EO_Type": "Vrsta gospodarskog subjekta",
+    "EO_Type_Data": {
+      "1": "Proizvođač / Uvoznik",
+      "2": "Vanjski proizvođač / uvoznik",
+      "3": "Distributer",
+      "4": "Maloprodajni trgovac"
+    },
+    "EO_Name1": "Naziv gospodarskog subjekta 1",
+    "EO_Name2": "Naziv gospodarskog subjekta 2",
+    "EO_Address_Name": "Naziv adrese",
+    "EO_Address_StreetOne": "Ulica 1",
+    "EO_Address_StreetTwo": "Ulica 2",
+    "EO_Address_PostCode": "Poštanski broj",
+    "EO_Address_City": "Grad",
+    "EO_A_Info": "Dodatne informacije",
+    "EO_CountryReg": "Država registracije",
+    "EO_Email": "Email",
+    "EO_Phone": "Telefon",
+    "VAT_R": "Registracija za PDV",
+    "VAT_R_Data": {
+      "0": "Nema PDV registracije",
+      "1": "PDV broj postoji"
+    },
+    "VAT_N": "PDV broj",
+    "TAX_N": "Porezni broj",
+    "EO_ExciseNumber1": "Prva trošarinska registracija",
+    "EO_ExciseNumber1_Data": {
+      "0": "Ne",
+      "1": "SEED broj postoji"
+    },
+    "EO_ExciseNumber2": "Druga trošarinska registracija",
+    "OtherEOID_R": "Dodatni identifikator EO-a",
+    "OtherEOID_N_list": "Popis dodatnih identifikatora",
+    "OtherEOID_N_list.OtherEOID_N": "Dodatni identifikator EO-a",
+    "Reg_3RD": "Registracija treće strane",
+    "Reg_EOID": "EO identifikator treće strane",
+    "EO_OtherID": "Drugi ID gospodarskog subjekta",
+    "Extensibility": "Proširivost",
+    "trigger": {
+      "update": "Ažuriraj",
+      "create": "Kreiraj"
+    }
+  },
+  "yesno_data": {
+    "1": "Da",
+    "0": "Ne"
+  },
+  "table": {
+    "name1": "Naziv 1",
+    "name2": "Naziv 2",
+    "action": "Akcija"
+  },
+  "login": {
+    "username": "Korisnicko ime",
+    "password": "Lozinka"
+  }
+}
