@@ -5,7 +5,12 @@ import {
   useSuspenseQuery,
 } from "@tanstack/react-query";
 import { api } from "../lib/fetch";
-import { LoaderFunctionArgs, useLoaderData, useNavigate } from "react-router";
+import {
+  LoaderFunctionArgs,
+  redirect,
+  useLoaderData,
+  useNavigate,
+} from "react-router";
 import { ListResponse } from "../types/response";
 import { useEffect } from "react";
 import { Loader } from "../components/loader/loader";
@@ -18,7 +23,9 @@ const listQuery = (q?: string) =>
     queryKey: ["economic-operator", "list", q || "all"],
     queryFn: async () => {
       const keys = Cookies.get("rf");
-      if (!keys) return undefined;
+      if (!keys) {
+        throw new Error("User not authenticated");
+      }
 
       const { api_key, api_secret } = JSON.parse(keys);
 
@@ -47,17 +54,27 @@ const loader =
   async ({ request }: LoaderFunctionArgs) => {
     const url = new URL(request.url);
     const q = url.searchParams.get("q") ?? "";
-    await qc.ensureQueryData(listQuery(q));
-    return { q };
+    try {
+      await qc.ensureQueryData(listQuery(q));
+      return { q };
+    } catch (err) {
+      if (err instanceof Error && err.message === "User not authenticated") {
+        return redirect("/auth/login");
+      }
+      throw err; // let other errors bubble up
+    }
   };
 
 function Home() {
   const { q } = useLoaderData();
   const navigate = useNavigate();
-  const { data: economicOperators, isLoading } = useSuspenseQuery<ListResponse>(
-    listQuery(q),
-  );
+  const {
+    data: economicOperators,
+    isLoading,
+    error,
+  } = useSuspenseQuery<ListResponse>(listQuery(q));
 
+  console.log(economicOperators, error);
   useEffect(() => {
     if (
       economicOperators.errorCode === 1056 ||

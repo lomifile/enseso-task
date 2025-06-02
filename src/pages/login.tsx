@@ -71,7 +71,7 @@ export default function LoginPage() {
       },
     );
 
-    navigate("/home");
+    navigate("/");
   };
 
   const onValidateError: SubmitErrorHandler<LoginFormValues> = (errors) => {

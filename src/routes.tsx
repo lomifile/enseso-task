@@ -12,7 +12,7 @@ const routes: (qc: QueryClient) => RouteObject[] = (qc: QueryClient) => [
     Component: App,
     children: [
       {
-        path: "home",
+        path: "",
         Component: HomeLayout,
         children: [
           {

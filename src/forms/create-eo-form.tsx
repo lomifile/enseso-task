@@ -167,7 +167,7 @@ const EoForm = ({ id }: EoFormProps) => {
       }
     },
     onSuccess: () => {
-      // navigate(0);
+      navigate(0);
     },
   });
 
